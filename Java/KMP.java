@@ -1,13 +1,13 @@
+// ignore lines 3-9, they only exist to debug
+
 import java.util.Arrays;
 
-// ignore lines 2-6, they only exist to debug
 public class KMP{
     public static void main(String[] args) {
         System.out.println(Arrays.toString(kmp("abcdabca")));
         System.out.println(Arrays.toString(kmp("abaaabab")));
     }
 
-    // method kmp() is the actual code.
     public static int[] kmp(String s){
         int n = s.length();
         int[] ar = new int[n];
