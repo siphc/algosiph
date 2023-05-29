@@ -1,14 +1,16 @@
-Class TreeNode{
+import java.util.*;
+
+class TreeNode{
     int value;
-    TreeNode[] children;
+    ArrayList<TreeNode> children;
 
     TreeNode(int v){
         value = v;
-        children = new TreeNode[];
+        children = new ArrayList<>();
     }
 
     TreeNode(){
         value = 0;
-        children = new TreeNode[];
+        children = new ArrayList<>();
     }
 }
